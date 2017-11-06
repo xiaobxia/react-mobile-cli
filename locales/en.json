@@ -1,0 +1,10 @@
+{
+  "App.name": "xiaobxia console",
+  "App.language": "language",
+  "App.menu.dashboard": "dashboard",
+  "App.menu.test": "test",
+  "App.login": "Log in",
+  "App.logout": "Log out",
+  "App.hello": "hello",
+  "App.noMatch": "Sorry! The page you are visiting does not exist."
+}

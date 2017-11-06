@@ -1,0 +1,15 @@
+$background-color: rgb(249, 77, 67);
+$high-color: rgb(255, 228, 99);
+$theme-color: #404040;
+
+@mixin placeholder-color($color) {
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+  &:-moz-placeholder {
+    color: $color;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+}
