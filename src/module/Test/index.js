@@ -1,13 +1,8 @@
-/**
- * Created by xiaobxia on 2017/10/18.
- */
 import React, {PureComponent} from 'react'
-import {bindActionCreators} from 'redux'
-import {connect} from 'react-redux'
 import {withRouter} from 'react-router-dom'
 import qs from 'qs'
-import HelloWord from 'localComponent/helloWorld'
-import {consoleRender} from 'localUtil/consoleLog'
+import HelloWord from '@/component/helloWorld'
+import {consoleRender} from '@/util/consoleLog'
 import classNames from 'classnames'
 import {injectIntl} from 'react-intl';
 
@@ -105,4 +100,4 @@ class Test extends PureComponent {
 }
 
 
-export default injectIntl(withRouter(connect()(Test)));
+export default injectIntl(withRouter(Test));

@@ -24,13 +24,7 @@ module.exports = {
     //对jsx的支持
     extensions: ['.js', '.jsx', '.json'],
     alias: {
-      '@': resolve('src'),
-      //通过module引入
-      'module': path.resolve(__dirname, '../src/module'),
-      'localUtil': path.resolve(__dirname, '../src/util'),
-      'localComponent': path.resolve(__dirname, '../src/component'),
-      'localStore': path.resolve(__dirname, '../src/store'),
-      'baseComponent': path.resolve(__dirname, '../src/component/baseComponent')
+      '@': resolve('src')
     }
   },
   plugins: [

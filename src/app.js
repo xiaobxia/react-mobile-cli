@@ -1,12 +1,10 @@
 import React from 'react';
 import axios from 'axios';
-import {Provider} from 'react-redux';
 import {HashRouter as Router, Route, Switch, Redirect} from 'react-router-dom';
-import 'antd-mobile/dist/antd-mobile.css';
-import './scss/index.scss';
-import UserLayout from './layout/userLayout'
-import store from './store';
+import './style/lib/antd-mobile.scss';
+import './style/index.scss';
 import Nprogress from 'nprogress'
+import {baseRouter} from '@/router'
 
 /**
  * ***********国际化************
@@ -62,7 +60,7 @@ axios.interceptors.response.use(function (response) {
       //有错误
       switch (data.status) {
         case 'USER_SESSION_TIMEOUT':
-          store.dispatch({type: 'APP_SHOW_GLOB_LOGIN'});
+          console.log('USER_SESSION_TIMEOUT')
           break;
       }
     }
@@ -92,21 +90,22 @@ const App = () => {
   return (
     <LocaleProvider locale={appLocale.antd}>
       <IntlProvider locale={appLocale.locale} messages={appLocale.messages}>
-        <Provider store={store}>
           <Router>
             <Switch>
-              <Route path="/user" component={UserLayout}/>
+              {baseRouter.map((item) => {
+                return (
+                  <Route exact key={item.path} path={item.path} component={item.component}/>
+                );
+              })}
               {/*<Route path="/" component={BasicLayout}/>*/}
-              {/*<Redirect to="/"/>*/}
+              <Redirect to="/"/>
             </Switch>
           </Router>
-        </Provider>
       </IntlProvider>
     </LocaleProvider>
   )
 };
 
 //渲染根元素
-//在顶层使用Provider可以避免把store 作为 props 传递到每一个被 connet() 包装的组件
 export default App;
 

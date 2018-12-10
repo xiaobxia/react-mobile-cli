@@ -1,9 +1,5 @@
-/**
- * Created by xiaobxia on 2017/9/13.
- */
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
-//import {connect} from 'react-redux'
 
 
 class HelloWord extends Component {
@@ -67,7 +63,3 @@ HelloWord.propTypes = {
   onFocus: PropTypes.func
 };
 export default HelloWord;
-
-//TODO 有了connect，就可以省去dispatch，
-// export default connect(
-// );

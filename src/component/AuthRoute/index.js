@@ -1,11 +1,8 @@
-/**
- * Created by xiaobxia on 2017/10/19.
- */
 import React, {Component} from 'react';
 import {Route} from 'react-router-dom';
 import {message} from 'antd';
 //需要鉴权
-class PrivateRoute extends Component {
+class AuthRoute extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -40,4 +37,4 @@ class PrivateRoute extends Component {
     );
   }
 }
-export default PrivateRoute;
+export default AuthRoute;

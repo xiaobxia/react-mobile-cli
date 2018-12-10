@@ -1,6 +1,3 @@
-/**
- * Created by xiaobxia on 2017/11/6.
- */
 export const windowSize = () => {
   let winWidth = 0;
   let winHeight = 0;
@@ -31,7 +28,6 @@ export const windowSize = () => {
 };
 export const setAdaptive = () => {
   let _baseFontSize = 10;
-  console.log(document.documentElement.clientWidth)
   let windowsWidth = windowSize().w;
   let _fontscale = windowsWidth / 375;
   let ua = navigator.userAgent;

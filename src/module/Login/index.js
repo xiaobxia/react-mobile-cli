@@ -1,12 +1,8 @@
-/**
- * Created by xiaobxia on 2017/11/6.
- */
 import React, {PureComponent} from 'react'
 import {createForm} from 'rc-form';
 import {InputItem, Button} from 'antd-mobile';
-import {connect} from 'react-redux'
 import {withRouter} from 'react-router-dom'
-import {consoleRender} from 'localUtil/consoleLog'
+import {consoleRender} from '@/util/consoleLog'
 import {injectIntl} from 'react-intl';
 
 class Login extends PureComponent {
@@ -40,10 +36,4 @@ class Login extends PureComponent {
   }
 }
 
-const mapStateToProps = state => {
-  return {
-    app: state.app
-  }
-};
-
-export default injectIntl(withRouter(createForm()(connect(mapStateToProps)(Login))));
+export default injectIntl(withRouter(createForm()(Login)));
