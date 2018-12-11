@@ -1,6 +1,7 @@
-$background-color: rgb(249, 77, 67);
+$background-color: rgb(249, 249, 249);
 $high-color: rgb(255, 228, 99);
 $theme-color: #404040;
+
 
 @mixin placeholder-color($color) {
   &::-webkit-input-placeholder {

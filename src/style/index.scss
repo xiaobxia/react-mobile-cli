@@ -22,17 +22,19 @@
   height: 2px;
   .bar {
     height: 100%;
-    background-color: $high-color;
+    background-color: #108ee9;
   }
 }
 
 body{
   width: 100%;
   height: 100%;
+  font-size: 30px;
   background-color: $background-color;
 }
 
-@import "module/login";
 @import "module/test";
+@import "module/login";
+@import "module/index";
 
 

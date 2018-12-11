@@ -2,22 +2,21 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 40rem;
   margin: auto;
-  width: 60rem;
+  width: 120px;
   .login-btn {
-    margin-top: 15rem;
+    margin-top: 30px;
     background-color: $high-color;
     color: $background-color;
-    height: 9rem;
+    height: 18px;
     border-radius: 10px;
-    font-size: 3.6rem;
-    line-height: 9rem;
+    font-size: 72px;
+    line-height: 180px;
   }
   .login-input {
-    height: 8rem;
+    height: 16px;
     background-color: $background-color;
-    font-size: 3.6rem;
+    font-size: 16px;
     border-bottom: 1px solid $high-color;
     .am-input-clear {
       color: $high-color;
@@ -26,13 +25,13 @@
     .am-input-label {
       color: $high-color;
       font-size: inherit;
-      width: 5.5rem;
+      width: 20px;
     }
     input {
       height: 100%;
       width: 100%;
       border: none;
-      font-size: 3.6rem;
+      font-size: 72px;
       color: $high-color;
       @include placeholder-color(lighten($high-color, 20%));
       &:focus {

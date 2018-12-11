@@ -27,7 +27,7 @@ export const windowSize = () => {
   return obj;
 };
 export const setAdaptive = () => {
-  let _baseFontSize = 10;
+  let _baseFontSize = 20;
   let windowsWidth = windowSize().w;
   let _fontscale = windowsWidth / 375;
   let ua = navigator.userAgent;

@@ -13,7 +13,7 @@ class Index extends PureComponent {
     consoleRender('Index render');
     let locale = this.props.intl.formatMessage;
     return (
-      <div>dashboard</div>
+      <div className='page-index'>dashboard</div>
     );
   }
 }
