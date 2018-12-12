@@ -2,6 +2,7 @@ import React, {PureComponent} from 'react'
 import {withRouter} from 'react-router-dom'
 import {consoleRender} from '@/util/consoleLog'
 import {injectIntl} from 'react-intl';
+import MyTabBar from '@/component/MyTabBar'
 
 class Index extends PureComponent {
   //生命周期mount
@@ -13,7 +14,9 @@ class Index extends PureComponent {
     consoleRender('Index render');
     let locale = this.props.intl.formatMessage;
     return (
-      <div className='page-index'>dashboard</div>
+      <div className='page-index'>
+        <MyTabBar/>
+      </div>
     );
   }
 }
